@@ -1,6 +1,6 @@
 {
   "name": "while2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "10x while loop",
   "keywords": [
     "while",
@@ -8,13 +8,13 @@
     "declaration",
     "statement"
   ],
-  "homepage": "https://github.com/10xEngineersQualityProgramming/while2#readme",
+  "homepage": "https://github.com/in-fp/while2#readme",
   "bugs": {
-    "url": "https://github.com/10xEngineersQualityProgramming/while2/issues"
+    "url": "https://github.com/in-fp/while2/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/10xEngineersQualityProgramming/while2.git"
+    "url": "git+https://github.com/in-fp/while2.git"
   },
   "license": "UNLICENSED",
   "author": "me",
