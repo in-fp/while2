@@ -13,7 +13,7 @@ class w2 {
   }
   end() {
     try {
-      while (this.condition) {
+      while (this.condition()) {
         this.doHandler(this.i, () => {
           throw breakError
         }) // pass in the function to break the loop

@@ -14,12 +14,12 @@ To use while2, first import the module. It is recommended to call it `w2`.
 const w2 = require('while2')
 ```
 
-For every while2 statement, you will create a new instance of `w2`, as it is a class, and pass a condition. For everything that you want to run while the condition is true, put `.do(...)` and then pass in a function in the parentheses. Always type `.end()`at the end to run the while loop or it won't work
+For every while2 statement, you will create a new instance of `w2`, as it is a class, and pass a condition. The condition must be a function that returns something. For everything that you want to run while the condition is true, put `.do(...)` and then pass in a function in the parentheses. Always type `.end()`at the end to run the while loop or it won't work
 
 ```javascript
 const w2 = require('while2')
 
-new w2(true) // equivalent to while (true)
+new w2(() => true) // equivalent to while (true)
   .do(() => {
     // anything here will run again and again forever
   })
@@ -33,7 +33,7 @@ While2 includes an i parameter that will automatically increment every time the 
 ```javascript
 const w2 = require('while2')
 
-new w2(true)
+new w2(() => true)
   .do(i => {
     console.log(i) /* will print 1 2 3 4 5 6 7... */
   })
@@ -47,7 +47,7 @@ While2 includes a `breakLoop` parameter function so that you can break your whil
 ```javascript
 const w2 = require('while2')
 
-new w2(true)
+new w2(() => true)
   .do((i, breakLoop) => {
     if (i > 3) breakLoop() // prints 0, 1, 2, 3 then stops
     console.log(i)
